@@ -1,0 +1,21 @@
+a {
+font-size: larger;
+text-decoration: dotted;
+color:brown
+}
+header {
+color:black ;
+}
+h1 {
+font-size: 50px;
+text-shadow: 3px 1px 1px blanchedalmond;
+                
+}
+p {
+font-size: 1em;
+font-weight: lighter;
+line-height: 1rem;}
+#wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
