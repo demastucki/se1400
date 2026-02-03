@@ -8,10 +8,17 @@ color:black ;
 }
 h1 {
 font-size: 50px;
-text-shadow: 3px 1px 1px blanchedalmond;
-                
+text-shadow: 3px 1px 1px blanchedalmond;                
 }
 p {
 font-size: 1em;
 font-weight: lighter;
 line-height: 1rem;}
+nav a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blanchedalmond;
+}
+header{
+    background-color: burlywood;
+}
