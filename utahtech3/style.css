@@ -83,4 +83,14 @@ footer {
 h3 {
     color: #003058;
 }
+main{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+#homehero{
+    background-image: url('./images/homehero.jpg');
+    height: 300px;
+    background-size: cover;
+    
 
+}
