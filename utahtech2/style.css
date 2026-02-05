@@ -54,4 +54,7 @@ footer {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
+    background-color: white;
+    min-width: 960px;
+    max-width: 2048px;
 }
