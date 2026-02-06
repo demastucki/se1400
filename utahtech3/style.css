@@ -91,6 +91,23 @@ main{
     background-image: url('./images/homehero.jpg');
     height: 300px;
     background-size: cover;
-    
-
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#studenthero{
+    background-image: url('./images/studenthero.jpg');
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#facultyhero{
+    background-image: url('./images/facultyhero.jpg');
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+nav a {
+    text-decoration: none;
 }
