@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-color: #FFFFFF;
@@ -5,7 +8,7 @@ body {
     font-family: Verdana, Arial, sans-serif;
     background-image: linear-gradient(to bottom, #eeeeee,#ffffff);
     background-attachment:fixed;
-
+    margin:0;
 }
 
 
@@ -23,15 +26,31 @@ h1 {
     padding-left: 1em;
     background-repeat: no-repeat;
     background-position: top right;
-    margin-bottom:0;
+    margin:0;
     background-origin:content-box;
 }
-
+nav ul {
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-flow:nowrap;
+    list-style-type:none;
+}
+nav ul li {
+    width:100%;
+}
 
 nav {
     font-weight: bold;
-    background-color: #F3F3F3;
-    padding: .5rem .5rem .5rem 2rem;
+    background-color: #424242;
+    padding:0;
+    margin:0;
+    position:sticky;
+    top:0;
+}
+nav{
+    grid-row: 2 / 3;
+    grid-column: 2 / 8;
 }
 
 
@@ -62,13 +81,9 @@ footer {
 
 
 #wrapper {
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: white;
-    min-width: 960px;
-    max-width: 2048px;
-    box-shadow: 0px 3px 3px rgba(66,66,66,0.3);
+    display:grid;
+    grid-auto-rows: minmax(0, auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
 }
 #homehero {
     background-size: cover;
@@ -110,4 +125,37 @@ main{
 }
 nav a {
     text-decoration: none;
+    color: #FFFFFF;
+    padding: 1rem 0rem;
+    display: block;
+    text-align: center;
+
+}
+header{
+    grid-column: 2 / 8;
+    grid-row: 2/ -2;
+}
+#homehero, #studenthero, #facultyhero{
+    grid-column: 2 / 8;
+    grid-row: 3 / 4;
+}
+main{
+    grid-column: 2 / 8;
+    grid-row: 4 / 5;
+    background-color: #ffffff;
+}
+footer{
+    grid-column: 2 / 8;
+    grid-row: 5 / 6;
+}
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+main img {
+    float: right;
+    padding-left: 2rem;
+}
+nav a:hover {
+    background-color: #BA1C21;
 }
