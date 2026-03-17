@@ -56,20 +56,20 @@ nav a {
     grid-column:2 / 8;
 }
 main{
-    background-color: #49498A;
+    background-color: #191970;
     min-height: 80px;
     grid-row: 4 / 5;
     grid-column:2 / 8;
 }
 
 #copyright {
-    background-color: #49498A;
+    background-color: #191970;
     height: 50px;
     grid-row: 6 / 7;
     grid-column:2 / 8;
 }
 footer {
-    background-color: lightblue;
+    background-color: #D9D9D9;
     min-height: 650px; 
     grid-row: 5 / 6;
     grid-column: 2 / 8;
