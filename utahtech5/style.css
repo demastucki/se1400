@@ -136,7 +136,7 @@ header{
     grid-row: 2/ -2;
 }
 #homehero, #studenthero, #facultyhero{
-    grid-column: 2 / 8;
+    grid-column: 1 / -1;
     grid-row: 3 / 4;
 }
 main{
@@ -168,4 +168,7 @@ nav a:hover {
     background-color: #424242;
     grid-row: 2 / 3;
     grid-column: 1 / -1;
+}
+#wrapper {
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 150px)) minmax(0px, 1fr);
 }
