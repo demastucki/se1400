@@ -28,22 +28,26 @@
   <main>
     <h2>Join Alumni Mailing List</h2>
     <h3>Request Alumni Newsletter</h3>
-    <form method="post" action="https://kearl.net/se1400/mail.php">
+    <p>Required information is marked with an asterisk (*).</p>
+    <form method="post" action="https://wfc.flitchbeta.com/se1400/index.php">
 
-        <label for="myFName">First Name:</label>
-        <input type="text" name="myFName" id="myFName">
+        <label for="myFName">*First Name:</label>
+        <input type="text" name="myFName" id="myFName" required>
 
-        <label for="myLName">Last Name:</label>
-        <input type="text" name="myLName" id="myLName">
+        <label for="myLName">*Last Name:</label>
+        <input type="text" name="myLName" id="myLName" required>
 
-        <label for="myEmail">Email:</label>
-        <input type="email" name="myEmail" id="myEmail">
+        <label for="myEmail">*Email:</label>
+        <input type="email" name="myEmail" id="myEmail" required>
 
         <label for="myPhone">Phone:</label>
         <input type="tel" name="myPhone" id="myPhone">
 
-        <label for="myComments">Comments:</label>
-        <textarea name="myComments" cols="20" rows="2" id="myComments"></textarea>
+        <label for="myGraduationYear">Graduation Date:</label>
+        <input type="date" name="myGraduationYear" id="myGraduationYear">
+
+        <label for="myComments">*Comments:</label>
+        <textarea name="myComments" cols="20" rows="2" id="myComments" required></textarea>
 
         <input name="submit" type="submit" value="Submit" id="mySubmit">
     </form>
