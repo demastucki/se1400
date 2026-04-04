@@ -100,7 +100,12 @@ footer {
     width: 100%;
     height: 250px;
     object-fit: cover; 
+    object-position: center top;
     border-bottom: 1px solid #eee; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+}
+
+.portrait-image {
+    object-position: center center;
 }
 
 .footer-content h2 {
@@ -137,7 +142,7 @@ body{
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 150px)) minmax(0px, 1fr);
 }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 992px) {
     nav {
         grid-column: 2 / 4;
         grid-row: 2 / 3;
@@ -207,6 +212,33 @@ body{
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+    #hero {
+        display: none;
+    }
+    nav {
+        grid-column: 2 / -2;
+        grid-row: 2 / 3;
+        height: 200px;
+        justify-content: center;
+        align-items: stretch;
+        padding-top: 0;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
+        width: 80%;
+    }
+    .footer-content img {
+        object-position: center top;
+    }
+    .portrait-image {
+        object-position: center bottom;
+    }
+
+
 
 }
