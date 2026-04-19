@@ -172,6 +172,16 @@ footer {
     min-height: 0;
     padding: 0;
 }
+
+#video-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+
+#video-section iframe {
+    max-width: 100%;
+}
 .portrait-image {
     width: 1000px;
     height: 50%;
@@ -297,8 +307,12 @@ body{
 }
 }
 @media only screen and (max-width: 992px) {
+    #bluebar {
+        display: none;
+    }
+
     nav {
-        grid-column: 2 / 4;
+        grid-column: 1 / 5;
         grid-row: 2 / 3;
         height: 200px;
         justify-content: center;
@@ -334,7 +348,7 @@ body{
     }
 
     #hero, #barcelonahero, #realhero, #santoshero {
-        grid-column: 4 / 8;
+        grid-column: 5 / 9;
         grid-row: 2 / 3;
         height: 200px;
         margin: 0;
