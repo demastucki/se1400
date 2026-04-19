@@ -23,9 +23,39 @@
                 </ul>
             </nav>
             <div id="santoshero"></div>
-            <main></main>
-            <footer class="player-footer blank-footer"></footer>
-            <div id="copyright"></div>
+            <main>
+                <div id="main-text">
+                    <h1>Want more information about soccer players?</h1>
+                    <p>If you would like to get more information about this website or the information provided, please fill out the form below and we will get back to you as soon as possible. We look forward to hearing from you!</p>
+                </div>
+            </main>
+            <footer class="player-footer blank-footer">
+               <form action="https://formspree.io/f/mojywnde" method="POST">
+
+                    <label for="myFName">*First Name:</label>
+                    <input type="text" name="myFName" id="myFName" required="">
+
+                    <label for="myLName">*Last Name:</label>
+                    <input type="text" name="myLName" id="myLName" required="">
+
+                    <label for="myEmail">*Email:</label>
+                    <input type="email" name="myEmail" id="myEmail" required="">
+
+                    <label for="myPhone">Phone:</label>
+                    <input type="tel" name="myPhone" id="myPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" title="Phone number should be in the format: 123-456-7890">
+
+                    <label for="mybirthdate">Birth Date:</label>
+                    <input type="date" name="mybirthdate" id="mybirthdate">
+
+                    <label for="myComments">*Comments:</label>
+                    <textarea name="myComments" cols="20" rows="2" id="myComments" required=""></textarea>
+
+                    <input name="submit" type="submit" value="Submit" id="mySubmit">
+                </form> 
+            </footer>
+            <div id="copyright">
+                <p>&copy; 2024 Football Legends. All rights reserved.</p>
+            </div>
         </div>
     </body>
 </html>
