@@ -161,7 +161,6 @@ footer {
     justify-content: space-around;
     align-items: flex-start;
     gap: 15px;
-    border-radius-top: 20px;
 }
 
 .player-footer {
