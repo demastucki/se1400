@@ -300,6 +300,10 @@ label {
     color: #555;
     line-height: 1.5;
 }
+#hero, #barcelonahero, #realhero, #santoshero{
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
 #copyright p {
     color: white;
     text-align: center;
